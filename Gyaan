@@ -1,3 +1,21 @@
-Fast moves k time for every 1-step of slow,
+(1) Fast moves k time for every 1-step of slow,
 Fast reaches L (end)
 slow reaches L/k of LL
+
+(2) Nth node from end
+
+a b c d e g ......... z nullptr
+1 2 3 ............... L nullptr (L+1)th postion
+          (Nth position) = L-N+1 index
+
+fast=1, slow=1
+Fast=1+N, slow=1
+Now when fast reaches nullptr
+(1+n) + k =L+1
+k=(L-N) jumps
+
+SO slow reaches to 1 + (L-N) index ===> Nth positon from end
+
+
+
+                       
