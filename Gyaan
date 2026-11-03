@@ -1,1 +1,3 @@
-If fast moves $k$ steps for every $1$ step of slow, when fast reaches the end, slow will sit at node $\mathbf{\frac{1}{k} \times L}$
+Fast moves k time for every 1-step of slow,
+Fast reaches L (end)
+slow reaches L/k of LL
