@@ -1,0 +1,36 @@
+class Solution {
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        
+        int carry=0;
+        
+        ListNode* a=l1;
+        ListNode* b=l2;
+
+        ListNode* head=new ListNode (0);
+        ListNode* curr=head;
+        while(a!=nullptr || b!=nullptr || carry!=0)
+        {
+            int vala,valb;
+            if(a==nullptr) vala=0;
+            else vala=a->val;
+
+            if(b==nullptr) valb=0;
+            else valb=b->val;
+
+            
+            int valc=(vala+valb+carry);
+            carry=(valc/10);
+            valc=valc%10;
+            if(a!=nullptr)
+            a=a->next;
+            if(b!=nullptr)
+            b=b->next;
+
+            ListNode* c=new ListNode(valc);
+            curr->next=c;
+            curr=c;
+        }
+        return head->next;
+    }
+};
