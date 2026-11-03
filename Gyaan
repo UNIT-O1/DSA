@@ -17,5 +17,10 @@ k=(L-N) jumps
 SO slow reaches to 1 + (L-N) index ===> Nth positon from end
 
 
-
+(3)
+Reverse LL
+nullptr  node1 node2
+prev     curr   temp
+karte jaao
+return prev
                        
