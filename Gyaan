@@ -23,4 +23,47 @@ nullptr  node1 node2
 prev     curr   temp
 karte jaao
 return prev
-                       
+
+(4)
+#include<iostream>
+
+int main()
+{
+	int* ptr=nullptr;
+
+
+	try{
+	ptr=new int;
+	*ptr =22;
+	std::cout<<"Dynamic number: "<<*ptr<<std::endl;
+
+	}
+		catch(const std::bad_alloc &e) {
+		return -1;
+	}
+	return 0;
+}
+
+(5)
+using namespace <name>
+
+namespace first{ int x=1;
+}
+namespace second{ int x=2; }
+
+int main()
+{ cout<<first::x;
+using namespace second;
+cout<<x;
+return 0;
+}
+
+(6) dangling pointer: jo cleared memory location ka address rakh ke rakha hain
+that why delete ptr; (clear the memory location data, not address from ptr storing it)
+so do this ptr=nullptr
+
++: EVEN IF WE DO delete ptr-> delete ptr no error;
+
+(7) get C-level speed in C++ using cin/cout ===> disable C buffer synchronization at the start of main()
+std::ios_base::sync_with_stdio(false);
+std::cin.tie(NULL);
