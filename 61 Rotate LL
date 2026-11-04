@@ -1,0 +1,17 @@
+class Solution {
+public:
+    ListNode* rotateRight(ListNode* head, int k) {
+        
+        int n=0;
+        ListNode* curr=head;
+        while(curr) n++;
+
+        // rever from 1 to n-k 
+        // rever from n-k+1 to n 
+        // reverse whole 
+
+        
+
+
+    }
+};
