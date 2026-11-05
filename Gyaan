@@ -58,12 +58,26 @@ cout<<x;
 return 0;
 }
 
-(6) dangling pointer: jo cleared memory location ka address rakh ke rakha hain
+(6) 
+dangling pointer: jo cleared memory location ka address rakh ke rakha hain
 that why delete ptr; (clear the memory location data, not address from ptr storing it)
 so do this ptr=nullptr
 
 +: EVEN IF WE DO delete ptr-> delete ptr no error;
 
-(7) get C-level speed in C++ using cin/cout ===> disable C buffer synchronization at the start of main()
+(7) 
+get C-level speed in C++ using cin/cout ===> disable C buffer synchronization at the start of main()
 std::ios_base::sync_with_stdio(false);
 std::cin.tie(NULL);
+
+(8) 
+Moore voting algo majority element ke liye pairwise distinct elementt ko mar deta hain
+
+(9) 
+Subarray/subtrign: contiguous
+subsequence: not contiguous but relative order YES
+subset: not contiguous and no relative order NO
+
+(10)
+Misra-Gries / Generalized Boyer-Moore
+
